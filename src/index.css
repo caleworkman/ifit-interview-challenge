@@ -1,5 +1,16 @@
 :root {
   --ifit-gray: #d5d6d6;
+  --ifit-blue: #0069d2;
+
+  --max-width: 1440px;
+
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -9,9 +20,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  height: 100%;
+  width: 100%;
 }

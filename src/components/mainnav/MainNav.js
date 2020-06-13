@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import Button from "../button/Button.js";
+
 import {ReactComponent as IFitCoachLogo} from "../../assets/ifit-coach-logo.svg";
 
 import "./MainNav.css";
@@ -15,7 +15,9 @@ class MainNav extends PureComponent {
           <div className="main-nav__nav">Activity</div>
           <div className="main-nav__nav">Sleep</div>
         </div>
-        <Button><div>Sign Up</div></Button>
+        <div className="main-nav__button">
+          Sign Up
+        </div>
       </div>
     );
   }
