@@ -1,0 +1,27 @@
+.card {
+  /* Style for "base" */
+  width: 288px;
+  height: 280px;
+  box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.card__contents {
+  padding: 1rem;
+}
+
+.card__name {
+  /* Style for "Lake Innis" */
+  color: #2e3134;
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Rg"; */
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+
+.card__distance::after {
+  contents: " MI";
+}

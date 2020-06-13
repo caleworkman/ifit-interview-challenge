@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ArrowButton from "../arrowbutton/ArrowButton.js";
-import Card from "./Card.js";
+import Slide from "./Slide.js";
 
 import GearJunkieLogo from "../../assets/gear-junkie-logo.svg";
 import MashableLogo from "../../assets/mashable-logo.svg";
@@ -15,15 +15,15 @@ class Slider extends Component {
         <div className="slider__arrow slider__arrow--left">
           <ArrowButton />
         </div>
-        <Card
+        <Slide
           logo={GearJunkieLogo}
           text="You focus on putting in the work, and the technology handles the rest."
         />
-        <Card
+        <Slide
           logo={WiredLogo}
           text="Literally transports you from home to wherever you choose to run."
         />
-        <Card
+        <Slide
           logo={MashableLogo}
           text="Breathes new life into a tired, old running routine."
         />

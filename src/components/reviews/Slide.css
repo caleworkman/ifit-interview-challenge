@@ -1,4 +1,4 @@
-.card {
+.slide {
   display: grid;
   grid-template-rows: min-content min-content;
   text-align: center;
@@ -13,14 +13,23 @@
   background-color: #ffffff;
 }
 
-.card__text {
+.slide__text {
   padding: 0 4rem;
+  /* Style for "“You focus" */
+  opacity: 0.8;
+  color: #2e3134;
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Rg"; */
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 24px;
 }
 
-.card__text::before {
+.slide__text::before {
   content: "\"";
 }
 
-.card__text::after {
+.slide__text::after {
   content: "\"";
 }

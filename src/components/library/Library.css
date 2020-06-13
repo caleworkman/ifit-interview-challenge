@@ -1,0 +1,10 @@
+.library {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(4, min-content);
+  grid-gap: 1.5rem;
+  padding: 2rem;
+}

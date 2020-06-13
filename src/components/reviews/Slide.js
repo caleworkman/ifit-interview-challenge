@@ -1,14 +1,14 @@
 import React, { PureComponent } from "react";
-import "./Card.css";
+import "./Slide.css";
 
-class Card extends PureComponent {
+class Slide extends PureComponent {
   render() {
     return (
-      <div className="card">
-        <div className="card__logo">
+      <div className="slide">
+        <div className="slide__logo">
           <img src={this.props.logo} alt="" />
         </div>
-        <div className="card__text">
+        <div className="slide__text">
           {this.props.text}
         </div>
       </div>
@@ -16,4 +16,4 @@ class Card extends PureComponent {
   }
 }
 
-export default Card;
+export default Slide;
