@@ -1,0 +1,26 @@
+.slider {
+  /* Style for "bg" */
+  height: 232px;
+  border-radius: 2px;
+  background-color: #f4f5f7;
+
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-items: center;
+
+  position: relative;
+}
+
+.slider__arrow {
+  position: absolute;
+}
+
+.slider__arrow--left {
+  left: 1rem;
+}
+
+.slider__arrow--right {
+  right: 1rem;
+}

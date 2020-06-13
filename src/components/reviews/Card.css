@@ -1,0 +1,26 @@
+.card {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  text-align: center;
+  align-content: center;
+  grid-gap: 1rem;
+
+  /* Style for "container" */
+  width: 440px;
+  min-height: 184px;
+  box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.card__text {
+  padding: 0 4rem;
+}
+
+.card__text::before {
+  content: "\"";
+}
+
+.card__text::after {
+  content: "\"";
+}

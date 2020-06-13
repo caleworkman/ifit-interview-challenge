@@ -1,0 +1,25 @@
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  /* Style for "Oval" */
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
+  border: 1px solid rgba(244, 245, 247, 0.32);
+  background-color: #000c28;
+  opacity: 0.8;
+}
+
+.arrow-button__arrow {
+  /* Style for "ui/color/w" */
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.arrow-button__arrow--right {
+  transform: rotate(180deg);
+}
