@@ -1,11 +1,28 @@
 import React, { PureComponent } from "react";
 import "./Equipment.css";
 
+const equipmentDetails = require("./equipment.json");
+
 class Equipment extends PureComponent {
   render() {
+
+    const equipment = Object.values(equipmentDetails).map(equip => {
+      return (
+        <div className="equipment__card">
+          <img src={require("../../assets" + equip.imageUrl)} alt="" />
+          <div className="equipment__card__name">{equip.name}</div>
+        </div>
+      );
+    });
+
     return (
       <div className="equipment">
-
+        <div className="equipment__title">
+          Interested in our exciting iFit-enabled equipment?
+        </div>
+        <div className="equipment__grid">
+          {equipment}
+        </div>
       </div>
     );
   }

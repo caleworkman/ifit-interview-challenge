@@ -2,49 +2,57 @@
   {
     "name": "Lake Inniscarra, Ireland - Pyramid",
     "time": "30:53",
-    "distance": "6,248",
-    "imageUrl": "/market-1.png"
+    "distance": "6,248 MI",
+    "imageUrl": "/market-1.png",
+    "trainerImageUrl": "/trainer-1.png"
   },
   {
     "name": "Performance Series",
     "time": "",
     "distance": "",
-    "imageUrl": "/market-2.png"
+    "imageUrl": "/market-2.png",
+    "trainerImageUrl": "/trainer-2.png"
   },
   {
     "name": "Slow Pulls and Fast Intervals",
     "time": "44:13",
-    "distance": "9,948",
-    "imageUrl": "/market-3.png"
+    "distance": "9,948 MI",
+    "imageUrl": "/market-3.png",
+    "trainerImageUrl": "/trainer-3.png"
   },
   {
     "name": "20 Minutes to Toned",
     "time": "",
     "distance": "",
-    "imageUrl": "/market-4.png"
+    "imageUrl": "/market-4.png",
+    "trainerImageUrl": "/trainer-4.png"
   },
   {
     "name": "Charles Race, Boston, Massachusetts",
     "time": "36:42",
     "distance": "8,648 MI",
-    "imageUrl": "/market-5.png"
+    "imageUrl": "/market-5.png",
+    "trainerImageUrl": "/trainer-5.png"
   },
   {
     "name": "Full-Body HIIT Series",
     "time": "",
     "distance": "",
-    "imageUrl": "/market-6.png"
+    "imageUrl": "/market-6.png",
+    "trainerImageUrl": "/trainer-6.png"
   },
   {
     "name": "Kafue River, Zambia - Power Stroke Pyramid",
-    "time": "",
-    "distance": "",
-    "imageUrl": "/market-7.png"
+    "time": "22:22",
+    "distance": "4,640 MI",
+    "imageUrl": "/market-7.png",
+    "trainerImageUrl": "/trainer-7.png"
   },
   {
     "name": "Shred & Burn Series",
     "time": "",
     "distance": "",
-    "imageUrl": "/market-8.png"
+    "imageUrl": "/market-8.png",
+    "trainerImageUrl": "/trainer-8.png"
   }
 ]

@@ -2,12 +2,29 @@
   /* Style for "base" */
   width: 288px;
   height: 280px;
+  min-width: 288px;
+  min-height: 280px;
+  box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  /* Style for "base" */
+  width: 288px;
+  height: 280px;
   box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
   border-radius: 4px;
   background-color: #ffffff;
 }
 
 .card__contents {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 0.5rem;
   padding: 1rem;
 }
 
@@ -22,6 +39,47 @@
   line-height: 18px;
 }
 
-.card__distance::after {
-  contents: " MI";
+.card__trainer {
+  align-self: center;
+  height: 28px;
+  width: 28px;
+}
+
+.card__small {
+  align-items: center;
+  display: grid;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+  grid-gap: 0.5rem;
+  white-space: nowrap;
+
+  color: #2e3134;
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Rg"; */
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.card__view-details {
+  display: none;
+}
+
+.card:hover .card__view-details {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  display: inline;
+
+  /* Style for "VIEW DETAI" */
+  color: #0069d2;
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Rg"; */
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
 }

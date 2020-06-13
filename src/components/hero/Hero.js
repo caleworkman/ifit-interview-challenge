@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import gmaps from "../../assets/gmapsinworkout.png";
 import "./Hero.css";
 
 class Hero extends PureComponent {

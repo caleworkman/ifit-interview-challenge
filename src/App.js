@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <Slider />
       <Library />
-
+      <Equipment />
     </div>
   );
 }

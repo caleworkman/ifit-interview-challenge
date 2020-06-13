@@ -7,8 +7,7 @@ const cardsDetails = require("./cards.json");
 class Library extends PureComponent {
   render() {
 
-    const cards = Object.keys(cardsDetails).map(key => {
-      const card = cardsDetails[key];
+    const cards = Object.values(cardsDetails).map(card => {
       return <Card key={card.name} {...card} />
     });
 
