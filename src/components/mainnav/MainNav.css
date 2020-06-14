@@ -6,6 +6,7 @@
 
 .main-nav__logo {
   cursor: pointer;
+  align-self: center;
 }
 
 .main-nav__navs {
