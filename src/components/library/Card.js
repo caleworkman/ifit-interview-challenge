@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 
 import clockIcon from "../../assets/clock-icon.png";
 import distanceIcon from "../../assets/distance-icon.png";
+import workoutIcon from "../../assets/workout-icon.png";
 
 import "./Card.css";
 
@@ -12,6 +13,18 @@ class Card extends PureComponent {
 
         <div className="card__image">
           <img src={require("../../assets" + this.props.imageUrl)} alt="" />
+          {this.props.workoutCount
+            ? <div className="card__image-overlay">
+                <div className="card__image-overlay__count">
+                  {this.props.workoutCount}
+                </div>
+                <div className="card__image-overlay__text">
+                  workouts
+                </div>
+                <img src={workoutIcon} alt="" />
+              </div>
+            : null
+          }
         </div>
 
         <div className="card__contents">

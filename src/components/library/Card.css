@@ -18,6 +18,47 @@
   background-color: #ffffff;
 }
 
+.card__image {
+  position: relative;
+}
+
+.card__image-overlay {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-gap: 0.5rem;
+  align-content: center;
+  justify-items: center;
+
+  /* Style for "overlay" */
+  width: 112px;
+  height: 164px;
+  background-color: rgba(0, 12, 40, 0.54);
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  /* Style for "9" */
+  color: #ffffff;
+  font-family: "Open Sans";
+  /* font-family: "League Gothic - Regular"; */
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.card__image-overlay__text {
+  /* Style for "Workouts" */
+  color: #ffffff;
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Rg"; */
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
 .card__contents {
   display: grid;
   grid-template-columns: 1fr min-content;

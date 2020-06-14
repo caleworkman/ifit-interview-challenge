@@ -11,7 +11,8 @@
     "time": "",
     "distance": "",
     "imageUrl": "/market-2.png",
-    "trainerImageUrl": "/trainer-2.png"
+    "trainerImageUrl": "/trainer-2.png",
+    "workoutCount": 9
   },
   {
     "name": "Slow Pulls and Fast Intervals",
@@ -25,7 +26,8 @@
     "time": "",
     "distance": "",
     "imageUrl": "/market-4.png",
-    "trainerImageUrl": "/trainer-4.png"
+    "trainerImageUrl": "/trainer-4.png",
+    "workoutCount": 20
   },
   {
     "name": "Charles Race, Boston, Massachusetts",
@@ -39,7 +41,8 @@
     "time": "",
     "distance": "",
     "imageUrl": "/market-6.png",
-    "trainerImageUrl": "/trainer-6.png"
+    "trainerImageUrl": "/trainer-6.png",
+    "workoutCount": 12
   },
   {
     "name": "Kafue River, Zambia - Power Stroke Pyramid",
@@ -53,6 +56,7 @@
     "time": "",
     "distance": "",
     "imageUrl": "/market-8.png",
-    "trainerImageUrl": "/trainer-8.png"
+    "trainerImageUrl": "/trainer-8.png",
+    "workoutCount": 16
   }
 ]
