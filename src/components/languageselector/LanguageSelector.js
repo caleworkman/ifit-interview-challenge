@@ -35,7 +35,7 @@ class LanguageSelector extends PureComponent {
 
     return (
       <div
-        className={"language" + (this.state.expanded ? " language--expanded" : "")}
+        className="language"
         onClick={this.toggleExpand}>
         <div className="language__selected">
           {this.props.selected}
