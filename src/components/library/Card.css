@@ -13,8 +13,6 @@
 
 .card:hover {
   /* Style for "base" */
-  width: 288px;
-  height: 280px;
   box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
   border-radius: 4px;
   background-color: #ffffff;

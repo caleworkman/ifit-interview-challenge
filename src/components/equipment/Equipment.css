@@ -1,8 +1,7 @@
 .equipment {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0 auto;
   padding: 1rem 1rem 2rem 1rem;
+  max-width: var(--max-width);
 }
 
 .equipment__title {
