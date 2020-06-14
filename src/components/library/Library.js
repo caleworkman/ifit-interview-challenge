@@ -12,8 +12,10 @@ class Library extends PureComponent {
     });
 
     return (
+      <div className="library-container">
       <div className="library">
         {cards}
+      </div>
       </div>
     );
   }
