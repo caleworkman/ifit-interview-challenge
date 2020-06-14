@@ -57,7 +57,7 @@
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .main-nav__logo {
     align-self: center;
     margin: 0;

@@ -4,6 +4,7 @@
   text-align: center;
   align-content: center;
   grid-gap: 1rem;
+  pointer-events: none;
 
   /* Style for "container" */
   max-width: 440px;
