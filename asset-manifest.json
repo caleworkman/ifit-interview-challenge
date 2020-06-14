@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ifit-interview-challenge/static/css/main.bbdb22f3.chunk.css",
-    "main.js": "/ifit-interview-challenge/static/js/main.10edd2c9.chunk.js",
-    "main.js.map": "/ifit-interview-challenge/static/js/main.10edd2c9.chunk.js.map",
+    "main.css": "/ifit-interview-challenge/static/css/main.33be1bc0.chunk.css",
+    "main.js": "/ifit-interview-challenge/static/js/main.7c5aafbb.chunk.js",
+    "main.js.map": "/ifit-interview-challenge/static/js/main.7c5aafbb.chunk.js.map",
     "runtime-main.js": "/ifit-interview-challenge/static/js/runtime-main.9879db51.js",
     "runtime-main.js.map": "/ifit-interview-challenge/static/js/runtime-main.9879db51.js.map",
-    "static/js/2.3c5455b8.chunk.js": "/ifit-interview-challenge/static/js/2.3c5455b8.chunk.js",
-    "static/js/2.3c5455b8.chunk.js.map": "/ifit-interview-challenge/static/js/2.3c5455b8.chunk.js.map",
+    "static/js/2.d7e22373.chunk.js": "/ifit-interview-challenge/static/js/2.d7e22373.chunk.js",
+    "static/js/2.d7e22373.chunk.js.map": "/ifit-interview-challenge/static/js/2.d7e22373.chunk.js.map",
     "index.html": "/ifit-interview-challenge/index.html",
-    "precache-manifest.ac005ae9c10d63b3ac31632096ca85ac.js": "/ifit-interview-challenge/precache-manifest.ac005ae9c10d63b3ac31632096ca85ac.js",
+    "precache-manifest.aff1a1078bd86acac9a831d067a18e16.js": "/ifit-interview-challenge/precache-manifest.aff1a1078bd86acac9a831d067a18e16.js",
     "service-worker.js": "/ifit-interview-challenge/service-worker.js",
-    "static/css/main.bbdb22f3.chunk.css.map": "/ifit-interview-challenge/static/css/main.bbdb22f3.chunk.css.map",
-    "static/js/2.3c5455b8.chunk.js.LICENSE.txt": "/ifit-interview-challenge/static/js/2.3c5455b8.chunk.js.LICENSE.txt",
+    "static/css/main.33be1bc0.chunk.css.map": "/ifit-interview-challenge/static/css/main.33be1bc0.chunk.css.map",
+    "static/js/2.d7e22373.chunk.js.LICENSE.txt": "/ifit-interview-challenge/static/js/2.d7e22373.chunk.js.LICENSE.txt",
     "static/media/arrow.svg": "/ifit-interview-challenge/static/media/arrow.28189801.svg",
     "static/media/equipment-bikes.png": "/ifit-interview-challenge/static/media/equipment-bikes.69d5a2bd.png",
     "static/media/equipment-ellipticals.png": "/ifit-interview-challenge/static/media/equipment-ellipticals.de0856a4.png",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9879db51.js",
-    "static/js/2.3c5455b8.chunk.js",
-    "static/css/main.bbdb22f3.chunk.css",
-    "static/js/main.10edd2c9.chunk.js"
+    "static/js/2.d7e22373.chunk.js",
+    "static/css/main.33be1bc0.chunk.css",
+    "static/js/main.7c5aafbb.chunk.js"
   ]
 }

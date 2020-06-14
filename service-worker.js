@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ifit-interview-challenge/precache-manifest.ac005ae9c10d63b3ac31632096ca85ac.js"
+  "/ifit-interview-challenge/precache-manifest.aff1a1078bd86acac9a831d067a18e16.js"
 );
 
 self.addEventListener('message', (event) => {
