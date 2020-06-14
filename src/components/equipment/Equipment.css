@@ -1,16 +1,8 @@
 .equipment {
   margin: 0 auto;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 0;
   max-width: var(--max-width);
-  opacity: 0;
-  transform: scale(1.1);
-  transition: opacity 2s, transform 2s;
-  overflow: hidden; /* Account for scale transform */
-}
-
-.equipment--visible {
-  opacity: 1;
-  transform: scale(1);
+  overflow: hidden;
 }
 
 .equipment__title {
@@ -32,6 +24,14 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   justify-items: center;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 2s, transform 2s;
+}
+
+.equipment__grid--visible {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .equipment__card {
