@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ifit-interview-challenge/static/css/main.ef5f88e6.chunk.css",
+    "main.js": "/ifit-interview-challenge/static/js/main.de93bdb3.chunk.js",
+    "main.js.map": "/ifit-interview-challenge/static/js/main.de93bdb3.chunk.js.map",
+    "runtime-main.js": "/ifit-interview-challenge/static/js/runtime-main.9879db51.js",
+    "runtime-main.js.map": "/ifit-interview-challenge/static/js/runtime-main.9879db51.js.map",
+    "static/js/2.64e1d896.chunk.js": "/ifit-interview-challenge/static/js/2.64e1d896.chunk.js",
+    "static/js/2.64e1d896.chunk.js.map": "/ifit-interview-challenge/static/js/2.64e1d896.chunk.js.map",
+    "index.html": "/ifit-interview-challenge/index.html",
+    "precache-manifest.604bd2ffe3b5ebe72ef184386d792130.js": "/ifit-interview-challenge/precache-manifest.604bd2ffe3b5ebe72ef184386d792130.js",
+    "service-worker.js": "/ifit-interview-challenge/service-worker.js",
+    "static/css/main.ef5f88e6.chunk.css.map": "/ifit-interview-challenge/static/css/main.ef5f88e6.chunk.css.map",
+    "static/js/2.64e1d896.chunk.js.LICENSE.txt": "/ifit-interview-challenge/static/js/2.64e1d896.chunk.js.LICENSE.txt",
+    "static/media/arrow.svg": "/ifit-interview-challenge/static/media/arrow.28189801.svg",
+    "static/media/equipment-bikes.png": "/ifit-interview-challenge/static/media/equipment-bikes.69d5a2bd.png",
+    "static/media/equipment-ellipticals.png": "/ifit-interview-challenge/static/media/equipment-ellipticals.de0856a4.png",
+    "static/media/equipment-strength.png": "/ifit-interview-challenge/static/media/equipment-strength.0a5e3a7a.png",
+    "static/media/equipment-treadmills.png": "/ifit-interview-challenge/static/media/equipment-treadmills.afbef8a6.png",
+    "static/media/expand-less.svg": "/ifit-interview-challenge/static/media/expand-less.11c162a0.svg",
+    "static/media/expand-more.svg": "/ifit-interview-challenge/static/media/expand-more.ca15223b.svg",
+    "static/media/gear-junkie-logo.svg": "/ifit-interview-challenge/static/media/gear-junkie-logo.7af5d0f6.svg",
+    "static/media/gmapsinworkout.png": "/ifit-interview-challenge/static/media/gmapsinworkout.2f431304.png",
+    "static/media/ifit-coach-logo.svg": "/ifit-interview-challenge/static/media/ifit-coach-logo.8db55f1f.svg",
+    "static/media/market-1.png": "/ifit-interview-challenge/static/media/market-1.1ac4484b.png",
+    "static/media/market-2.png": "/ifit-interview-challenge/static/media/market-2.c7f5d823.png",
+    "static/media/market-3.png": "/ifit-interview-challenge/static/media/market-3.2adb7ee8.png",
+    "static/media/market-4.png": "/ifit-interview-challenge/static/media/market-4.4e5afafc.png",
+    "static/media/market-5.png": "/ifit-interview-challenge/static/media/market-5.8270da1a.png",
+    "static/media/market-6.png": "/ifit-interview-challenge/static/media/market-6.69b52d2b.png",
+    "static/media/market-7.png": "/ifit-interview-challenge/static/media/market-7.f8a1d38e.png",
+    "static/media/market-8.png": "/ifit-interview-challenge/static/media/market-8.4818a5be.png",
+    "static/media/mashable-logo.svg": "/ifit-interview-challenge/static/media/mashable-logo.26d04980.svg",
+    "static/media/wired-logo.svg": "/ifit-interview-challenge/static/media/wired-logo.2ad37b94.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9879db51.js",
+    "static/js/2.64e1d896.chunk.js",
+    "static/css/main.ef5f88e6.chunk.css",
+    "static/js/main.de93bdb3.chunk.js"
+  ]
+}
