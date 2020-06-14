@@ -13,7 +13,7 @@
 .social__inner {
   width: 36px;
   height: 36px;
-  background-color: #2e3134;
+  background-color: var(--ifit-darkgray);
   border-radius: 50%;
   display: flex;
   align-items: center;

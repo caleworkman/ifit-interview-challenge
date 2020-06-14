@@ -1,19 +1,19 @@
 .footer {
   /* Style for "bg" */
-  height: 348px;
+  min-height: 348px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  background-color: #2e3134;
+  background-color:var(--ifit-darkgray);
+  padding-bottom: 1rem;
 }
 
 .footer__grid {
-  justify-items: center;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 184px;
   grid-gap: 5.5rem;
   justify-content: center;
   padding: 2rem;
-  border-bottom: solid 2px #585a5d;
+  border-bottom: solid 2px var(--ifit-bordergray);
 
   /* Style for "About  Con" */
   opacity: 0.8;
@@ -41,13 +41,12 @@
   grid-auto-flow: column;
   justify-content: center;
   padding: 1rem;
-  border-bottom: solid 2px #585a5d;
+  border-bottom: solid 2px var(--ifit-bordergray);
 }
 
 .footer__legal {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: min-content;
+  grid-template-rows: repeat(4, auto);
   grid-gap: 1rem;
   justify-content: center;
   padding-top: 2rem;
@@ -64,10 +63,24 @@
 }
 
 .footer__legal-item {
+  text-align: center;
   cursor: pointer;
 }
 
 .footer__language {
-  position: absolute;
-  left: 2rem;
+  justify-self: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .footer__legal {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, auto);
+    padding-bottom: 0;
+  }
+
+  .footer__language {
+    position: absolute;
+    left: 2rem;
+  }
 }

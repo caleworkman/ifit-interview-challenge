@@ -60,13 +60,6 @@ class Footer extends Component {
         </div>
 
         <div className="footer__legal">
-          <div className="footer__language">
-            <LanguageSelector
-              onSelect={this.selectLanguage}
-              selected={this.state.selectedLanguage}
-              options={this.languages}
-            />
-          </div>
           <div className="footer__legal-item">
             iFit.com. All Rights Reserved.
           </div>
@@ -75,6 +68,13 @@ class Footer extends Component {
           </div>
           <div className="footer__legal-item">
             Terms of Use
+          </div>
+          <div className="footer__language">
+            <LanguageSelector
+              onSelect={this.selectLanguage}
+              selected={this.state.selectedLanguage}
+              options={this.languages}
+            />
           </div>
         </div>
 
