@@ -1,0 +1,22 @@
+.social {
+  /* Style for "Fill-16" */
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(135deg, #0069d2 0%, #28e1a5 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social__inner {
+  width: 36px;
+  height: 36px;
+  background-color: #2e3134;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}

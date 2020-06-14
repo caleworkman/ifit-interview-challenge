@@ -1,0 +1,28 @@
+.language {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  align-items: center;
+  color: white;
+  fill: white;
+  position: relative;
+
+  /* Style for "English" */
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Rg"; */
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+
+.language__expanded {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: #2e3134;
+  display: grid;
+  grid-gap: 0.5rem;
+}

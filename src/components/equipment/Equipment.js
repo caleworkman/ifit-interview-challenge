@@ -8,7 +8,7 @@ class Equipment extends PureComponent {
 
     const equipment = Object.values(equipmentDetails).map(equip => {
       return (
-        <div className="equipment__card">
+        <div className="equipment__card" key={equip.name}>
           <img src={require("../../assets" + equip.imageUrl)} alt="" />
           <div className="equipment__card__name">{equip.name}</div>
         </div>

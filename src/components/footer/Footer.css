@@ -1,0 +1,69 @@
+.footer {
+  /* Style for "bg" */
+  height: 348px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: #2e3134;
+}
+
+.footer__grid {
+  justify-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 184px;
+  grid-gap: 5.5rem;
+  justify-content: center;
+  padding: 2rem;
+  border-bottom: solid 2px #585a5d;
+
+  /* Style for "About  Con" */
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Lt"; */
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+}
+
+.footer__grid-col__title {
+  font-weight: 700;
+}
+
+.footer__grid-col ul {
+  cursor: pointer;
+}
+
+.footer__socials {
+  display: grid;
+  grid-gap: 2rem;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: solid 2px #585a5d;
+}
+
+.footer__legal {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  grid-gap: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+  white-space: nowrap;
+
+  /* Style for "© iFit.com" */
+  color: #ffffff;
+  font-family: "Open Sans";
+  /* font-family: "Proxima Nova Rg"; */
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+}
+
+.footer__language {
+  position: absolute;
+  left: 2rem;
+}

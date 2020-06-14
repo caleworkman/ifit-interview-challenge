@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero.js";
 import Slider from "./components/reviews/Slider.js";
 import Library from "./components/library/Library.js";
 import Equipment from "./components/equipment/Equipment.js";
+import Footer from "./components/footer/Footer.js";
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Slider />
       <Library />
       <Equipment />
+      <Footer />
     </div>
   );
 }
