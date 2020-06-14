@@ -13,7 +13,7 @@ class Slider extends Component {
     super(props);
 
     this.state = {
-      slideNumber: 0
+      slideNumber: 0,
     }
 
     this.nextSlide = this.nextSlide.bind(this);
@@ -88,9 +88,7 @@ class Slider extends Component {
     }
   }
 
-
   render() {
-
     return (
       <div className="slider">
         <div
@@ -98,7 +96,11 @@ class Slider extends Component {
           onClick={this.prevSlide}>
           <ArrowButton />
         </div>
-        {this.state.currSlide}
+        <div className="slider__slides">
+          {this.state.prevSlide}
+          {this.state.currSlide}
+          {this.state.nextSlide}
+        </div>
         <div
           className="slider__arrow slider__arrow--right"
           onClick={this.nextSlide}>
