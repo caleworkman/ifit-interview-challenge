@@ -4,8 +4,8 @@ import "./Equipment.css";
 const equipmentDetails = require("./equipment.json");
 
 class Equipment extends PureComponent {
-  render() {
 
+  render() {
     const equipment = Object.values(equipmentDetails).map(equip => {
       return (
         <div className="equipment__card" key={equip.name}>
@@ -16,7 +16,9 @@ class Equipment extends PureComponent {
     });
 
     return (
-      <div className="equipment">
+      <div
+        className={"equipment" + (this.props.isVisible ? " equipment--visible" : "")}
+        ref={this.props.equipmentRef}>
         <div className="equipment__title">
           Interested in our exciting iFit-enabled equipment?
         </div>
