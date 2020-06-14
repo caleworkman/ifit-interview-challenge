@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ProductNav from "./components/productnav/ProductNav.js";
 import MainNav from "./components/mainnav/MainNav.js";
 import Hero from "./components/hero/Hero.js";
@@ -8,18 +8,48 @@ import Equipment from "./components/equipment/Equipment.js";
 import Footer from "./components/footer/Footer.js";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <ProductNav />
-      <MainNav />
-      <Hero />
-      <Slider />
-      <Library />
-      <Equipment />
-      <Footer />
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      fixedHeader: true
+    }
+
+    this.heroRef = React.createRef();
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
+  }
+
+  handleScroll() {
+    const heroBottom = this.heroRef.current.getBoundingClientRect().bottom;
+    this.setState({
+      fixedHeader: heroBottom > 0
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <div className={"header" + (this.state.fixedHeader ? "" : " header--unfixed")}>
+          <ProductNav />
+          <MainNav />
+        </div>
+        <Hero heroRef={this.heroRef} />
+        <Slider />
+        <Library />
+        <Equipment />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

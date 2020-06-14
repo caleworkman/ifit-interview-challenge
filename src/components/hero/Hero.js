@@ -4,7 +4,7 @@ import "./Hero.css";
 class Hero extends PureComponent {
   render() {
     return (
-      <div className="hero">
+      <div className="hero" ref={this.props.heroRef}>
         <div className="hero__text">
           <div>The best personal training,</div>
           <div>right in your own home</div>
