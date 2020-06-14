@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ace28c99c7617b67cc2b319b6d07b68",
+    "revision": "137d68508f9565917e7813d580ae815c",
     "url": "/ifit-interview-challenge/index.html"
   },
   {
-    "revision": "d59cfe30acc8718129d4",
-    "url": "/ifit-interview-challenge/static/css/main.f1eed1a4.chunk.css"
+    "revision": "eb3c384f6ff1623ee9d2",
+    "url": "/ifit-interview-challenge/static/css/main.243b888e.chunk.css"
   },
   {
     "revision": "30bd7c1eae201f367d8e",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ifit-interview-challenge/static/js/2.d7e22373.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d59cfe30acc8718129d4",
+    "revision": "eb3c384f6ff1623ee9d2",
     "url": "/ifit-interview-challenge/static/js/main.e448cd6c.chunk.js"
   },
   {
