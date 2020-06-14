@@ -16,8 +16,15 @@
 .slider__slides {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+}
 
+.slide-next {
+  animation: slide-next 0.5s forwards;
+}
+
+.slide-previous {
+  animation: slide-previous 0.5s forwards;
 }
 
 .slider__arrow {
@@ -38,9 +45,28 @@
   transform: scale(1.1);
 }
 
+@keyframes slide-next {
+  from {transform: translateX(200px);}
+  to {transform: translateX(0);}
+}
+
+@keyframes slide-previous {
+  from {transform: translateX(-200px);}
+  to {transform: translateX(0);}
+}
+
 @media only screen and (min-width: 768px) {
   .slider {
     grid-template-columns: repeat(1, minmax(440px, 1fr));
   }
 
+  @keyframes slide-next {
+    from {transform: translateX(440px);}
+    to {transform: translateX(0);}
+  }
+
+  @keyframes slide-previous {
+    from {transform: translateX(-440px);}
+    to {transform: translateX(0);}
+  }
 }

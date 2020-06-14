@@ -6,6 +6,8 @@ import GearJunkieLogo from "../../assets/gear-junkie-logo.svg";
 import MashableLogo from "../../assets/mashable-logo.svg";
 import WiredLogo from "../../assets/wired-logo.svg";
 
+import CircularDLL from "./CircularDLL.js";
+
 import "./Slider.css";
 
 class Slider extends Component {
@@ -13,82 +15,100 @@ class Slider extends Component {
     super(props);
 
     this.state = {
-      slideNumber: 0,
+      animate: false,
+      slideNext: false,
+      shownSlides: []
     }
 
     this.nextSlide = this.nextSlide.bind(this);
     this.prevSlide = this.prevSlide.bind(this);
-    this.setSlides = this.setSlides.bind(this);
+    this.doNextAnimation = this.doNextAnimation.bind(this);
+    this.doPrevAnimation = this.doPrevAnimation.bind(this);
 
-    this.slides = [
+    this.slides = new CircularDLL();
+    this.slides.add(
       <Slide
         logo={GearJunkieLogo}
-        key={0}
         text="You focus on putting in the work, and the technology handles the rest."
-      />,
+      />
+    );
+    this.slides.add(
       <Slide
         logo={WiredLogo}
-        key={1}
         text="Literally transports you from home to wherever you choose to run."
-      />,
+      />
+    );
+    this.slides.add(
       <Slide
         logo={MashableLogo}
-        key={2}
         text="Breathes new life into a tired, old running routine."
       />
-    ];
+    )
+
+    this.sliderRef = React.createRef();
   }
 
   componentDidMount() {
-    // Assumes there are at least 3 distinct slides
+    // Show 5 slides
     this.setState({
-      ...this.setSlides(this.state.slideNumber)
+      shownSlides: [
+        this.slides.head.previous.previous,
+        this.slides.head.previous,
+        this.slides.head,
+        this.slides.head.next,
+        this.slides.head.next.next
+      ]
     });
+  }
+
+  doNextAnimation() {
+    const animationListener = () => this.setState({animate:false});
+    this.sliderRef.current.addEventListener("animationend", animationListener, {once: true});
+    this.setState({animate: true, slideNext: true});
+  }
+
+  doPrevAnimation() {
+    const animationListener = () => this.setState({animate:false, slideNext: false});
+    this.sliderRef.current.addEventListener("animationend", animationListener, {once: true});
+    this.setState({animate: true, slideNext: false});
   }
 
   nextSlide() {
+    this.doNextAnimation();
     this.setState(prevState => {
-      var next = prevState.slideNumber + 1;
-      if (next > this.slides.length - 1) {
-        next = 0;
+      const slides = [...prevState.shownSlides];
+      const newSlides = slides.map(slide => {
+        return slide.next
+      });
+      return {
+        shownSlides: [...newSlides]
       }
-      return { ...this.setSlides(next) }
-    });
+    })
   }
 
   prevSlide() {
+    this.doPrevAnimation();
     this.setState(prevState => {
-      var prev = prevState.slideNumber - 1;
-      if (prev < 0) {
-        prev = this.slides.length - 1;
+      const slides = [...prevState.shownSlides];
+      const newSlides = slides.map(slide => {
+        return slide.previous
+      });
+      return {
+        shownSlides: [...newSlides]
       }
-      return { ...this.setSlides(prev) }
-    });
-  }
-
-  setSlides(currIndex) {
-    // Set the previous, current, and next slides based on the current index
-    // Updating like this ensures re-render each time
-    const slides = this.slides;
-    const currSlide = slides[currIndex];
-
-    const prevSlide = ((currIndex > 0)
-      ? slides[currIndex - 1]
-      : slides[slides.length - 1]);
-
-    const nextSlide = ((currIndex === slides.length - 1)
-      ? slides[0]
-      : slides[currIndex + 1]);
-
-    return {
-      prevSlide: prevSlide,
-      currSlide: currSlide,
-      nextSlide: nextSlide,
-      slideNumber: currIndex
-    }
+    })
   }
 
   render() {
+    const slides = this.state.shownSlides.map((slide, index) => {
+      return React.cloneElement(slide.data, {key: index})
+    });
+
+    const sliderAnimationClass = (this.state.animate
+      ? (this.state.slideNext ? " slide-next" : " slide-previous")
+      : ""
+    );
+
     return (
       <div className="slider">
         <div
@@ -96,10 +116,10 @@ class Slider extends Component {
           onClick={this.prevSlide}>
           <ArrowButton />
         </div>
-        <div className="slider__slides">
-          {this.state.prevSlide}
-          {this.state.currSlide}
-          {this.state.nextSlide}
+        <div
+          className={"slider__slides" + sliderAnimationClass}
+          ref={this.sliderRef}>
+          {slides}
         </div>
         <div
           className="slider__arrow slider__arrow--right"
