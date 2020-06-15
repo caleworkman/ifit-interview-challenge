@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ifit-interview-challenge/static/css/main.243b888e.chunk.css",
-    "main.js": "/ifit-interview-challenge/static/js/main.e448cd6c.chunk.js",
-    "main.js.map": "/ifit-interview-challenge/static/js/main.e448cd6c.chunk.js.map",
+    "main.css": "/ifit-interview-challenge/static/css/main.6ce3c11f.chunk.css",
+    "main.js": "/ifit-interview-challenge/static/js/main.388b758f.chunk.js",
+    "main.js.map": "/ifit-interview-challenge/static/js/main.388b758f.chunk.js.map",
     "runtime-main.js": "/ifit-interview-challenge/static/js/runtime-main.9879db51.js",
     "runtime-main.js.map": "/ifit-interview-challenge/static/js/runtime-main.9879db51.js.map",
     "static/js/2.d7e22373.chunk.js": "/ifit-interview-challenge/static/js/2.d7e22373.chunk.js",
     "static/js/2.d7e22373.chunk.js.map": "/ifit-interview-challenge/static/js/2.d7e22373.chunk.js.map",
     "index.html": "/ifit-interview-challenge/index.html",
-    "precache-manifest.26d652c15c313e5c79249ff28b899343.js": "/ifit-interview-challenge/precache-manifest.26d652c15c313e5c79249ff28b899343.js",
+    "precache-manifest.60a871653ade124c3c5ee6312359bc0a.js": "/ifit-interview-challenge/precache-manifest.60a871653ade124c3c5ee6312359bc0a.js",
     "service-worker.js": "/ifit-interview-challenge/service-worker.js",
-    "static/css/main.243b888e.chunk.css.map": "/ifit-interview-challenge/static/css/main.243b888e.chunk.css.map",
+    "static/css/main.6ce3c11f.chunk.css.map": "/ifit-interview-challenge/static/css/main.6ce3c11f.chunk.css.map",
     "static/js/2.d7e22373.chunk.js.LICENSE.txt": "/ifit-interview-challenge/static/js/2.d7e22373.chunk.js.LICENSE.txt",
     "static/media/arrow.svg": "/ifit-interview-challenge/static/media/arrow.28189801.svg",
     "static/media/equipment-bikes.png": "/ifit-interview-challenge/static/media/equipment-bikes.69d5a2bd.png",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.9879db51.js",
     "static/js/2.d7e22373.chunk.js",
-    "static/css/main.243b888e.chunk.css",
-    "static/js/main.e448cd6c.chunk.js"
+    "static/css/main.6ce3c11f.chunk.css",
+    "static/js/main.388b758f.chunk.js"
   ]
 }
