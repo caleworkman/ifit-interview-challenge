@@ -24,45 +24,4 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   justify-items: center;
-  opacity: 0;
-  transform: scale(1.1);
-  transition: opacity 2s, transform 2s;
-}
-
-.equipment__grid--visible {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.equipment__card {
-  /* Style for "bg" */
-  min-width: 330px;
-  height: 330px;
-  box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
-  border-radius: 4px;
-  background-color: #ffffff;
-  display: grid;
-  grid-template-rows: auto auto;
-  align-items: center;
-  justify-items: center;
-  cursor: pointer;
-}
-
-.equipment__card__name {
-  /* Style for "Strength" */
-  opacity: 0.8;
-  color: #2e3134;
-  font-family: "Open Sans";
-  /* font-family: "Proxima Nova Rg"; */
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  line-height: 28px;
-}
-
-.equipment__card:hover {
-  /* Style for "base" */
-  box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
-  border-radius: 4px;
-  background-color: #ffffff;
 }

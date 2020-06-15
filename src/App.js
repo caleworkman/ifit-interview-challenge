@@ -19,7 +19,6 @@ class App extends Component {
     }
 
     this.heroRef = React.createRef();
-    this.equipmentRef = React.createRef();
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -33,12 +32,7 @@ class App extends Component {
 
   handleScroll() {
     const heroBottom = this.heroRef.current.getBoundingClientRect().bottom;
-    const equipTop = this.equipmentRef.current.getBoundingClientRect().top;
-
-    this.setState({
-      fixedHeader: heroBottom > 0,
-      isEquipmentVisible: equipTop < window.innerHeight
-    });
+    this.setState({ fixedHeader: heroBottom > 0 });
   }
 
   render() {
@@ -51,10 +45,7 @@ class App extends Component {
         <Hero heroRef={this.heroRef} />
         <Slider />
         <Library />
-        <Equipment
-          equipmentRef={this.equipmentRef}
-          isVisible={this.state.isEquipmentVisible}
-        />
+        <Equipment />
         <Footer />
       </div>
     );
